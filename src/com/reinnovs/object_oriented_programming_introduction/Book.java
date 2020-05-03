@@ -4,10 +4,19 @@ public class Book {
 	private int noOfCopies;
 
 	void setNoOfCopies(int numCopies) {
-		this.noOfCopies = numCopies;
+		if (numCopies > 0)
+			this.noOfCopies = numCopies;
 	}
 
 	int getNoOfCopies() {
 		return this.noOfCopies;
+	}
+
+	public void increaseNumCopies(int howMuch) {
+		this.noOfCopies += howMuch;
+	}
+
+	public void decreaseNumCopies(int howMuch) {
+		this.noOfCopies -= howMuch;
 	}
 }

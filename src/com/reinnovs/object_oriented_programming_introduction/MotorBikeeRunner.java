@@ -9,12 +9,29 @@ public class MotorBikeeRunner {
 
 		ducati.start();
 		honda.start();
+		System.out.println();
 
-		ducati.setSpeed(100);
-		System.out.println(ducati.getSpeed());
+		System.out.println("Ducati Speed: " + ducati.getSpeed());
+		System.out.println("Honda Speed: " + ducati.getSpeed());
+		System.out.println();
 
-		honda.setSpeed(80);
-		System.out.println(honda.getSpeed());
+		ducati.setSpeed(23);
+		honda.setSpeed(13);
+		System.out.println("Ducati Set Speed: " + ducati.getSpeed());
+		System.out.println("Honda Set Speed: " + honda.getSpeed());
+		System.out.println();
+
+		ducati.increaseSpeed(100);
+		honda.increaseSpeed(100);
+		System.out.println("Ducati Increase Speed: " + ducati.getSpeed());
+		System.out.println("Honda Increase Speed: " + honda.getSpeed());
+		System.out.println();
+
+		ducati.decreaseSpeed(34);
+		honda.decreaseSpeed(63);
+		System.out.println("Ducati Decrease Speed: " + ducati.getSpeed());
+		System.out.println("Honda Decrease Speed: " + honda.getSpeed());
+		System.out.println();
 
 	}
 

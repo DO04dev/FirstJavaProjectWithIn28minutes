@@ -1,25 +1,24 @@
 package com.reinnovs.object_oriented_programming_introduction;
 
 public class MotorBike {
-	// State
-	// Use of private - Encapsulation
-	private int speed; // member variable
+	// State - Member Variables
+	private int speed;
 
-	// behaviour
-	// Create a method of exposing the above speed
-	void setSpeed(int speed) { // local variable
-
-		// Print Local Variable
-		System.out.println(speed);
-
-		// Print Member Variable
-		System.out.println(this.speed);
-
-		this.speed = speed;
+	void setSpeed(int speed) {
+		if (speed > 0)
+			this.speed = speed;
 	}
 
 	int getSpeed() {
 		return this.speed;
+	}
+
+	public void increaseSpeed(int howMuch) {
+		setSpeed(this.speed += howMuch);
+	}
+
+	public void decreaseSpeed(int howMuch) {
+		setSpeed(this.speed = howMuch);
 	}
 
 	void start() {
