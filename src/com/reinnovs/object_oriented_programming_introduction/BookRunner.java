@@ -7,9 +7,14 @@ public class BookRunner {
 		Book effectiveJava = new Book();
 		Book cleanCode = new Book();
 
-		artOfComputerProgramming.noOfCopies = 42;
-		effectiveJava.noOfCopies = 13;
-		cleanCode.noOfCopies = 45;
+		artOfComputerProgramming.setNoOfCopies(42);
+		artOfComputerProgramming.getNoOfCopies();
+
+		effectiveJava.setNoOfCopies(32);
+		effectiveJava.getNoOfCopies();
+
+		cleanCode.setNoOfCopies(24);
+		cleanCode.getNoOfCopies();
 
 	}
 
