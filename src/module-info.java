@@ -1,0 +1,2 @@
+module FirstJavaProjectWithIn28minutes {
+}
