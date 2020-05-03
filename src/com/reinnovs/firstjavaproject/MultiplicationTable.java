@@ -16,4 +16,6 @@ public class MultiplicationTable {
 			System.out.printf("%d * %d = %d", table, y, table * y).println();
 		}
 	}
+	// Restructuring - changing the structure of coding without changing the
+	// functionality
 }
