@@ -3,6 +3,13 @@ package com.reinnovs.object_oriented_programming_introduction;
 public class Book {
 	private int noOfCopies;
 
+	Book() {
+	}//
+
+	public Book(int noOfCopies) {
+		this.noOfCopies = noOfCopies;
+	}
+
 	void setNoOfCopies(int numCopies) {
 		if (numCopies > 0)
 			this.noOfCopies = numCopies;

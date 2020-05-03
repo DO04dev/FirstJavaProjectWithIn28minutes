@@ -4,6 +4,13 @@ public class MotorBike {
 	// State - Member Variables
 	private int speed;
 
+	MotorBike() {
+	} // Default Constructor
+
+	MotorBike(int speed) {
+		this.speed = speed;
+	}
+
 	void setSpeed(int speed) {
 		if (speed > 0)
 			this.speed = speed;

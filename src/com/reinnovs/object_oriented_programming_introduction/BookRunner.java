@@ -3,9 +3,9 @@ package com.reinnovs.object_oriented_programming_introduction;
 public class BookRunner {
 
 	public static void main(String[] args) {
-		Book artOfComputerProgramming = new Book();
-		Book effectiveJava = new Book();
-		Book cleanCode = new Book();
+		Book artOfComputerProgramming = new Book(33);
+		Book effectiveJava = new Book(43);
+		Book cleanCode = new Book(64);
 
 		System.out.println("Art of Programming Copies: " + artOfComputerProgramming.getNoOfCopies());
 		System.out.println("Effective Java: " + effectiveJava.getNoOfCopies());
