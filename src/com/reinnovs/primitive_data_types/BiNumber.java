@@ -1,4 +1,4 @@
-package com.roy.primitive_data_types;
+package com.reinnovs.primitive_data_types;
 
 public class BiNumber {
 	private int firstNo;
